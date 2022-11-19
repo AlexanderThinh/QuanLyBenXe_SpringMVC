@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//ApacheSoftware Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="..." />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        
+        <put-attribute name="content" value="base" />
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    
+    <definition name="tuyenXeDetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết tuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/tuyenXeDetail.jsp" />
+    </definition>
+    
+    <definition name="listChuyenXe" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách chuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/listChuyenXe.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    
+    <definition name="adminThemNhaXe" extends="baseLayout">
+        <put-attribute name="title" value="Thêm nhà xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/adminThemNhaXe.jsp" />
+    </definition>
+    
+    <definition name="adminQuanLyNhaXe" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý nhà xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/adminQuanLyNhaXe.jsp" />
+    </definition>
+    
+    <definition name="nxThemChuyenXe" extends="baseLayout">
+        <put-attribute name="title" value="Đăng chuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/nxThemChuyenXe.jsp" />
+    </definition>
+    
+    <definition name="nxThemTuyenXe" extends="baseLayout">
+        <put-attribute name="title" value="Đăng tuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/nxThemTuyenXe.jsp" />
+    </definition>
+    
+    <definition name="adminDoanhThuStats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê doanh thu tuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/adminDoanhThuStats.jsp" />
+    </definition>
+    
+    <definition name="adminDoanhThuStatsByYear" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê doanh thu tuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/adminDoanhThuStatsByYear.jsp" />
+    </definition>
+    
+    <definition name="listChuyenXeCommon" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách chuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/listChuyenXeCommon.jsp" />
+    </definition>
+    
+    <definition name="booking" extends="baseLayout">
+        <put-attribute name="title" value="Đặt vé" />
+        <put-attribute name="content" value="/WEB-INF/jsp/booking.jsp" />
+    </definition>
+    
+    <definition name="giaoHang" extends="baseLayout">
+        <put-attribute name="title" value="Vận chuyển hàng hóa" />
+        <put-attribute name="content" value="/WEB-INF/jsp/giaoHang.jsp" />
+    </definition>
+</tiles-definitions>
